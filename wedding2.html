@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation 2</title>
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Added a background color for better visibility */
+        }
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: url('/Img/floral\ wedding.png');
+            height: 600px;
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+        .invitation {
+            background: rgba(255, 255, 255, 0.331);
+            border-radius: 15px;
+            padding: 20px;
+            width: 100%;
+            max-width: 800px; /* Adjusted max-width for better responsiveness */
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            box-sizing: border-box;
+            position: relative;
+        }
+        .invitation::before, .invitation::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 15px;
+            background: url('wed1.webp') no-repeat center;
+            background-size: cover;
+            opacity: 0.1;
+            z-index: -1;
+        }
+        h1, h2 {
+            margin: 10px 0;
+            font-size: 2em;
+            text-align: center;
+        }
+        p {
+            margin: 5px 0;
+            font-size: 1.1em;
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+        }
+        .details div {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px; /* Add some margin to separate from the invitation */
+        }
+        .card {
+            background-image: url(/Img/—Pngtree—floral\ wedding.png);
+            display: inline-block;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+            width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-body {
+            padding: 10px;
+        }
+        .card-title {
+            color: #f02711;
+            margin: 10px 0;
+        }
+        .card-text {
+            color: #000000;
+            margin: 5px 0;
+        }
+        @media (max-width: 900px) {
+            .card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media (max-width: 600px) {
+            .card {
+                width: calc(100% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            h1, h2 {
+                font-size: 1.5em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+            .invitation {
+                padding: 15px;
+            }
+        }
+        @media (min-width: 768px) {
+            h1, h2 {
+                font-size: 2.5em;
+            }
+            p {
+                font-size: 1.2em;
+            }
+        }
+        /* Additional styles for other sections */
+        .name-box {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .name-box .cardtext {
+            flex: 1;
+            margin: 0 10px;
+            text-align: center;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .col-sm-6 {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 15px;
+        }
+        #map-container {
+            width: 100%;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        #contact-details {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            padding: 15px;
+            text-align: center;
+            font-size: small;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    <div class="invitation">
+        <h1>Rachelle Beaudry</h1>
+        <h2>and</h2>
+        <h1>Morgan Maxwell</h1>
+        <p>Request the pleasure of your company at the ceremony of their wedding</p>
+        <div class="details">
+            <div>
+                <p><strong>Saturday</strong></p>
+                <p>August 17</p>
+            </div>
+            <div>
+                <p><strong>LICERIA HOTEL</strong></p>
+                <p>123 Anywhere St., Any City</p>
+            </div>
+            <div>
+                <p><strong>Marriage</strong></p>
+                <p>at 7:00 pm</p>
+            </div>
+        </div>
+        <p>Thank you all for celebrating with us</p>
+        <p><em>Marriage to follow</em></p>
+    </div>
+
+    <!-- Cards Start for all functions -->
+<div class="container">
+    <div class="card">
+        <img src="/Img/wedding-bride.png" alt="Haldi">
+        <div class="card-body">
+            <h3 class="card-title">Haldi</h3>
+            <p class="card-text">Join us for a fun-filled Haldi ceremony with music, dance, and festivities.</p>
+            <p class="card-text">8th March 2019 | Haldi Ceremony | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/Img/Png mehndi.png" alt="Mehndi">
+        <div class="card-body">
+            <h3 class="card-title">Mehndi</h3>
+            <p class="card-text">Join us for a beautiful Mehndi night filled with intricate designs and celebrations.</p>
+            <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="/Img/sangeet.webp" alt="Sangeet">
+        <div class="card-body">
+            <h3 class="card-title">Sangeet</h3>
+            <p class="card-text">Celebrate with us at the Sangeet night, filled with music and dance.</p>
+            <p class="card-text">8th March 2019 | Sangeet Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="Img/india-couple.png" alt="Baraat Saugat">
+        <div class="card-body">
+            <h3 class="card-title">Baraat Saugat</h3>
+            <p class="card-text">Experience the vibrant and joyous Baraat procession.</p>
+            <p class="card-text">8th March 2019 | Baraat Procession | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="Img/Doli.webp" alt="Vidai">
+        <div class="card-body">
+            <h3 class="card-title">Vidai</h3>
+            <p class="card-text">Join us for the emotional Vidai ceremony.</p>
+            <p class="card-text">8th March 2019 | Vidai Ceremony | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="Img/reception.jpeg" alt="Reception">
+        <div class="card-body">
+            <h3 class="card-title">Reception</h3>
+            <p class="card-text">Celebrate the newlyweds at the grand reception party.</p>
+            <p class="card-text">8th March 2019 | Reception | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+        </div>
+    </div>
+</div>
+<!-- Cards end -->
+
+    <!-- Additional sections -->
+    <div class="name-box">
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Groom's Family</h3>
+                <p class="card-text">Mr. Ajay Puri</p>
+                <p class="card-text">Mrs. Sakshi Puri</p>
+            </div>
+        </div>
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Bride's Family</h3>
+                <p class="card-text">Mr. Mohit Roy</p>
+                <p class="card-text">Mrs. Janhavi Roy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1522371346077!2d<longitude_here>!3d<latitude_here>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z<latitude_here>%2C<longitude_here>!5e0!3m2!1sen!2sus!4v1627501256272!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="contact-details">
+                <h3>Contact Details:</h3>
+                <p><strong>Prism Banquets Hall</strong></p>
+                <p>South Goria, Kolkata</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Email: example@example.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- End additional sections -->
+
+</body>
+</html>

@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sagar.css">
+    <title>Wedding Invitation</title>
+    <style>
+        body {
+            overflow-x: hidden;
+            background: linear-gradient(to bottom, transparent 50%, #f8f8f8 50%), url('Img/pinkroses.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            height: 190vh;
+            margin: 0;
+        }
+
+        .group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 350px;
+            height: 450px;
+            border-radius: 50%;
+            background-color: #ffffff9a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .logo h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .vivah img {
+            width: 200px;
+            height: 200px;
+        }
+
+        .abc {
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        .abcd {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .box-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            background-image: url('Img/wed4back.webp');
+            background-size: cover;
+            padding: 20px;
+        }
+
+        .box {
+            border: 2px solid brown;
+            width: 300px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .row {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+        .row .card {
+            background-color: rgb(224, 149, 190);
+        }
+        .card {
+            border: 2px solid brown;
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            width: 300px;
+            text-align: center;
+        }
+        .card img{
+            width:250px ;
+            height: 150px;
+        }
+
+        .baal-geet {
+            background-image: url('Img/white.jpg');
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .golu {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+
+        .name-box {
+            background-image: url('Img/textbackground.jpg');
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .cardtext {
+            border: 2px solid brown;
+            padding: 20px;
+            margin: 10px;
+            background: rgb(223, 149, 174);
+            box-shadow: 5px 5px 15px rgba(245, 238, 238, 0.3);
+            text-align: center;
+        }
+
+        .map-contact {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        #map-container {
+            margin: 10px;
+        }
+
+        #contact-details {
+            margin: 10px;
+            text-align: center;
+        }
+
+        @media screen and (max-width: 768px) {
+            .box, .card, .cardtext, .row {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            .card img {
+                width: 200;
+                height: 200;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .box-container,
+            .name-box,
+            .map-contact {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+            }
+
+            .box,
+            .card,
+            .cardtext,
+            .row {
+                width: 90%;
+                margin: 10px 0;
+            align-items: center;
+            margin-left: 15px;
+            }
+
+            .card {
+                align-items: center;
+                width: 80%;
+                
+            }
+
+            .card img {
+                width: 190px;
+                height: 150px;
+            }
+
+            .group {
+                width: 85%;
+                height: auto;
+                padding: 10px;
+            }
+
+            .logo h1 {
+                font-size: 20px;
+            }
+
+            .vivah img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .abc {
+                font-size: 16px;
+                margin-top: 10px;
+            }
+
+            .box {
+                width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            .card {
+                width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            .baal-geet {
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            .name-box {
+                margin-top: 10px;
+            }
+
+            .cardtext {
+                width: 90%;
+                margin: 10px auto;
+                padding: 10px;
+            }
+
+            .map-contact {
+                padding: 10px;
+                margin-top: 10px;
+            }
+
+            #map-container {
+                width: 100%;
+                margin: 10px 0;
+            }
+
+            #map-container iframe {
+                width: 100%;
+            }
+
+            #contact-details {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="group">
+        <div class="logo">
+            <h1><b>Sagar weds Rupa</b></h1>
+        </div>
+        <div class="vivah">
+            <img src="https://png.pngtree.com/png-clipart/20230417/original/pngtree-shubh-vivah-calligraphy-for-hindu-wedding-with-kalash-png-image_9060544.png" alt="Shubh Vivah">
+            <p class="abc">
+                <span class="abcd">31 December 2023, Sunday</span><br>
+                वक्रतुंड महाकाय सूर्यकोटि समप्रभा ! <br>
+                निर्विघ्नम कुरु मे देव सर्वकार्येषु सर्वदा !!
+            </p>
+        </div>
+    </div>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="https://png.pngtree.com/png-clipart/20231020/original/pngtree-cute-indian-wedding-couple-cartoon-png-image_13388419.png" width="100" height="80" alt="Wedding Couple">
+            <p><b>Tilak Ceremony:</b> 9:00 p.m</p>
+            <p><b>Venue:</b> City Hall</p>
+            <p><b>Address:</b> 123 Wedding Lane</p>
+        </div>
+        <div class="box">
+            <img src="Img/suagat.jpg" width="150" height="80" alt="Wedding Couple">
+            <p><b>Suagat of Barat:</b> 11:00 p.m</p>
+            <p><b>Jaimala:</b> 12:00 a.m</p>
+            <p><b>Doli Vidai:</b> 6:00 a.m</p>
+        </div>
+        <div class="box">
+            <img src="Img/reception.jpeg" width="150" height="80" alt="Wedding Couple">
+            <p><b>Reception:</b> 4:00 p.m</p>
+            <p><b>Venue:</b> Bride's House</p>
+            <p><b>Address:</b> 456 Celebration Street</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="card girl">
+            <p><b>Name:</b> Er. Rupa Kumari</p>
+            <p><b>Father's Name:</b> Anil Kumar Singh</p>
+            <p><b>District:</b> Samastipur</p>
+            <p><b>State:</b> Bihar</p>
+            <img src="https://thumbs.dreamstime.com/b/bride-doli-266884674.jpg" alt="Bride Doli">
+        </div>
+        <div class="card boy">
+            <p><b>Name:</b> Er. Sagar Kumar</p>
+            <p><b>Father's Name:</b> Binod Kumar</p>
+            <p><b>District:</b> Bokaro</p>
+            <p><b>State:</b> Jharkhand</p>
+            <img src="https://cdn11.bigcommerce.com/s-x49po/images/stencil/1500x1500/products/90585/250548/1666367695916_20221021_210714__08754.1687001950.jpg?c=2" alt="Celebration">
+        </div>
+    </div>
+
+    <div class="baal-geet">
+        <p class="golu">Nachenge gayenge sbko manayenge bhaiya ke shadi me machayenge - GOLU</p>
+    </div>
+
+    <div class="name-box">
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Groom's Family</h3>
+                <p class="card-text">Mr. Ajay Puri</p>
+                <p class="card-text">Mrs. Sakshi Puri</p>
+            </div>
+        </div>
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Bride's Family</h3>
+                <p class="card-text">Mr. Mohit Roy</p>
+                <p class="card-text">Mrs. Janhavi Roy</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-contact">
+        <div id="map-container">
+            <div id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1522371346077!2d<longitude_here>!3d<latitude_here>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z<latitude_here>%2C<longitude_here>!5e0!3m2!1sen!2sus!4v1627501256272!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div id="contact-details">
+            <h3>Contact Details:</h3>
+            <p><strong>Prism Banquets Hall</strong></p>
+            <p>South Goria, Kolkata</p>
+            <p>Phone: +91 1234567890</p>
+            <p>Email: example@example.com</p>
+        </div>
+    </div>
+</body>
+
+</html>

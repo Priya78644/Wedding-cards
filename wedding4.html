@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation 4</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            overflow-x: hidden;
+            background-color: #f7f7f7;
+            font-family: 'Times New Roman', Times, serif;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .wedding {
+            background-image: url('Img/heart.png');
+            padding: 20px;
+        }
+
+        .invitation {
+            background-image: url('Img/wed4back.webp');
+            background-size: cover;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            border: 5px solid #d4af37;
+            display: inline-block;
+            width: 90%;
+            max-width: 650px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .ganesha {
+            width: 80px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            color: #c93131;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .event-details {
+            font-size: 1em;
+            margin: 20px 0;
+            color: #000;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .col-sm-6 {
+            flex: 1 1 300px;
+            max-width: 300px;
+            margin: 10px;
+        }
+
+        /* Functions cards Start */
+        .card {
+            background-image: url('Img/white.jpg');
+            background-size: cover;
+            display: inline-block;
+            background-color: #f8f9fa; /* Light grey background for cards */
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+            margin-bottom: 20px; /* Space between cards */
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Cover the space */
+            display: inline-block;
+        }
+
+        .card-body {
+            text-align: center; /* Centered text */
+        }
+
+        .card-title {
+            color: #f02711; /* Dark grey for title */
+        }
+
+        .card-text {
+            color: #000000; /* Medium grey for text */
+        }
+
+        .wave {
+            width: 100%;
+            height: 20px;
+            background: url('wave.png'); /* Add a wave image at the bottom of the card */
+            background-size: cover;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        @keyframes wave {
+            0% {
+                transform: translateY(100%);
+            }
+            50% {
+                transform: translateY(50%);
+            }
+            100% {
+                transform: translateY(100%);
+            }
+        }
+        /* Function Cards End */
+
+        /* Child text Start */
+        .agrah {
+            background-image: url('Img/text.jpg');
+            background-position: center;
+            width: 100%;
+            height: auto;
+            padding: 50px 0;
+        }
+
+        .Baalgeet {
+            position: relative;
+            text-align: center;
+            width: 100%;
+            padding: 20px;
+            background: #7f824a;
+            border: 1px solid #fae8e8;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+            margin: 20px auto;
+        }
+
+        .Baalgeet  .text {
+            color: white;
+           
+        }
+
+        .content {
+            padding: 0 40px;
+            text-align: center;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 50px;
+        }
+
+        .text {
+            font-size: 1.5em;
+            color: #cb3f3f;
+        }
+
+        /* Child text end */
+
+        /* Family Name Start */
+        .name-box {
+    background-image: url(Img/textback.webp);
+    background-size: cover; /* Ensure the background image covers the container */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items vertically in the center */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    padding: 20px; /* Add padding for spacing */
+}
+
+.cardtext {
+    width: 48%; /* Each card takes up 48% of the container width */
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.card-body {
+    background: rgba(255, 255, 255, 0.7); /* Semi-transparent white background for readability */
+    padding: 20px; /* Padding inside each card */
+}
+
+.card-title {
+    margin-top: 0; /* Remove default margin from h3 */
+}
+
+.card-text {
+    margin-bottom: 5px; /* Space between paragraphs */
+}
+
+        /* Family name end */
+
+        @media (max-width: 600px) {
+            .invitation, .card {
+                width: 95%;
+            }
+
+            .invitation {
+                background-size: 150%;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .card-title {
+                font-size: 1.2em;
+            }
+
+            .cardtext {
+                font-size: 0.9em;
+            }
+
+            .name-box {
+                background-size: 50%;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .name-box .card {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            #map-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                margin-top: 20px;
+            }
+
+            #map {
+                width: 100%;
+                height: 200px;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+
+            #contact-details {
+                width: 90%;
+                max-width: 300px;
+                margin-top: 20px;
+                text-align: left;
+                padding: 10px;
+                background-color: #f8f9fa;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+        }
+
+        @media (max-width: 300px) {
+            body {
+                padding: 0 10px;
+            }
+
+            .invitation {
+                width: 95%;
+                background-size: cover;
+                padding: 2px;
+                border-width: 3px;
+            }
+
+            .ganesha {
+                width: 50px;
+                margin-bottom: 10px;
+            }
+
+            h1 {
+                font-size: 1.5em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .event-details {
+                font-size: 0.8em;
+            }
+
+            .card {
+                width: 110%;
+                background-size: cover;
+                margin-bottom: 10px;
+                box-shadow: none;
+            }
+
+            .card img {
+                height: 150px;
+            }
+
+            .card-title {
+                font-size: 1em;
+            }
+
+            .card-text {
+                font-size: 0.8em;
+            }
+
+            .wave {
+                height: 15px;
+            }
+
+            .agrah {
+                padding: 20px 0;
+            }
+
+            .Baalgeet {
+                width: 60%;   
+            }
+
+            .content {
+                padding: 0 20px;
+            }
+
+            .logo {
+                width: 30px;
+            }
+
+            .text {
+                font-size: 1.1em;
+            }
+
+            .name-box {
+                flex-direction: column;
+                align-items: center;
+                margin-top: 10px;
+            }
+
+            .name-box .card-text {
+                width: 90%;
+                margin-bottom: 10px;
+            }
+
+        #map {
+            align-items: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #contact-details {
+            text-align: left;
+            padding: 10px;
+            background-color: #f8f9fa;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Mantra Wedding details Start -->
+    <div class="wedding">
+        <div class="invitation">
+            <img src="Img/Ganesh.webp" alt="Ganesha" class="ganesha"><br>
+            <p>
+                वक्रतुंड महाकाय सूर्यकोटि समप्रभा ! <br>
+                निर्विघ्नम कुरु मे देव सर्वकार्येषु सर्वदा !!
+            </p>
+            <h1>Anuraag & Prerna</h1>
+            <p>
+                (S/o. Mrs. Sakshi Puri & Mr. Ajay Puri)<br>
+                &<br>
+                (D/o. Mrs. Janhavi Roy & Mr. Mohit Roy)
+            </p>
+            <p>We have great pleasure in inviting you & your family to <br>grace the auspicious occasion of the wedding ceremony.</p>
+            <p class="event-details">
+                9th March 2019 | Marriage Ceremony (Muhurat) | 10:30 pm - 11:30 pm<br>
+                11th March 2019 | Reception | 7:00 pm onwards<br>
+                at Prism Banquets Hall, South Goria, Kolkata
+            </p>
+        </div>
+    </div>
+    <!-- wedding details end -->
+
+    <!-- Logo subh Vivah -->
+    <div class="col-sm-6" style="display: inline-block;">
+        <div class="tabla1">
+            <img src="Img/subh.png" width="200px" height="150px" alt="">
+        </div>
+    </div>
+    <!-- logo end -->
+
+    <!-- Cards Start for all functions -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/Haldi.jpg" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Haldi</h3>
+                        <p class="card-text">Join us for a fun-filled Haldi ceremony with music, dance, and festivities.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/mehndi.jpg" alt="Mehndi">
+                    <div class="card-body">
+                        <h3 class="card-title">Mehndi</h3>
+                        <p class="card-text">Join us for a beautiful Mehndi night filled with intricate designs and celebrations.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/sangeet.webp" alt="Sangeet">
+                    <div class="card-body">
+                        <h3 class="card-title">Sangeet</h3>
+                        <p class="card-text">Celebrate with us at the Sangeet night, filled with music and dance.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/suagat.jpg" alt="Baraat Suagat">
+                    <div class="card-body">
+                        <h3 class="card-title">Baraat Saugat</h3>
+                        <p class="card-text">Experience the vibrant and joyous Baraat procession.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/Doli.webp" alt="Vidai">
+                    <div class="card-body">
+                        <h3 class="card-title">Vidai</h3>
+                        <p class="card-text">Join us for the emotional Vidai ceremony.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <img src="Img/reception.jpeg" alt="Reception">
+                    <div class="card-body">
+                        <h3 class="card-title">Reception</h3>
+                        <p class="card-text">Celebrate the newlyweds at the grand reception party.</p>
+                        <p class="card-text">8th March 2019 | Mehendi Night | 7:30 pm onwards<br>at Jagriti House, Plot No. 37, Bypass Road, Kolkata - 700001</p>
+                    </div>
+                    <div class="wave"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cards end -->
+
+    <!-- Child text Start -->
+    <div class="agrah">
+        <div class="Baalgeet">
+            <div class="content">
+                <div class="text">“Sending Nemantran to call you, hey mind of the kingdom, do not forget to come”!</div>
+            </div>
+        </div>
+    </div>
+    <!-- Child text end -->
+
+    <!-- Family Name Start -->
+    <div class="name-box">
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Groom's Family</h3>
+                <p class="card-text">Mr. Ajay Puri</p>
+                <p class="card-text">Mrs. Sakshi Puri</p>
+            </div>
+        </div>
+        <div class="cardtext">
+            <div class="card-body">
+                <h3 class="card-title">Bride's Family</h3>
+                <p class="card-text">Mr. Mohit Roy</p>
+                <p class="card-text">Mrs. Janhavi Roy</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Family Name End -->
+
+    <!-- Map and Contact Details Section -->
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="map-container">
+                <div id="map">
+                    <!-- Embedded map or link to Google Maps -->
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.1522371346077!2d<longitude_here>!3d<latitude_here>!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z<latitude_here>%2C<longitude_here>!5e0!3m2!1sen!2sus!4v1627501256272!5m2!1sen!2sus" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="contact-details">
+                <h3>Contact Details:</h3>
+                <p><strong>Prism Banquets Hall</strong></p>
+                <p>South Goria, Kolkata</p>
+                <p>Phone: +91 1234567890</p>
+                <p>Email: example@example.com</p>
+            </div>
+        </div>
+    </div>
+    <!-- Map and Contact Details Section End -->
+
+</body>
+</html>
